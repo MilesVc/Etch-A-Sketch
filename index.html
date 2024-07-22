@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
     <meta charset='utf-8'>
@@ -15,6 +15,36 @@
     <button class ="rainbowMode">Rainbow Mode</button>
     <button class ="eraser">Eraser</button>
     <button class ="clear">Clear</button>
-    <container class="container"></container>
+    <container class="container1"></container>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Grid</title>
+    <style>
+        .grid-container {
+            display: grid;
+        }
+        .grid-item {
+            /* width: 50px; */
+            /* height: 50px; */
+            background-color: lightblue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <input type="number" id="gridSizeInput" placeholder="Enter grid size" />
+    <button onclick="createGrid()">Create Grid</button>
+    <div id="gridContainer" class="grid-container"></div>
+
+    <script src="main.js"></script>
 </body>
 </html>
